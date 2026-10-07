@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scoop & Swirl | Artisan Ice Cream Shop & ScoopBot</title>
+  
+  <!-- SEO Best Practices -->
+  <meta name="description" content="Happiness Served One Scoop at a Time! Browse handcrafted artisanal ice cream, loaded sundaes, thick milkshakes, and cakes. Chat with ScoopBot for sweet recommendations." />
+  <meta name="keywords" content="ice cream, Scoop and Swirl, artisanal gelato, sundae, milkshakes, ice cream cake, Karachi, Pakistan, ScoopBot" />
+  <meta name="theme-color" content="#FF4D79" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/Logo.svg.svg" />
+
+  <!-- Google Fonts: Fredoka & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Core Design System CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- React 18, ReactDOM 18 & Babel Standalone via CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js" crossorigin="anonymous"></script>
+
+  <!-- Local App Data & Engines -->
+  <script src="./js/data.js"></script>
+  <script src="./js/audio.js"></script>
+  <script src="./js/botEngine.js"></script>
+</head>
+<body>
+  <!-- React Root Element -->
+  <div id="root">
+    <!-- Sweet Loading Indicator before React Mounts -->
+    <div style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; font-family: 'Fredoka', cursive, sans-serif; color: #FF4D79;">
+      <div style="font-size: 3.5rem; animation: floatSubtle 1.5s ease-in-out infinite alternate;">🍨</div>
+      <h2 style="font-size: 1.8rem; color: #381E19;">Scoop & Swirl</h2>
+      <p style="color: #7A6964; font-family: 'Plus Jakarta Sans', sans-serif;">Churning fresh sweetness...</p>
+    </div>
+  </div>
+
+  <!-- React Application Component Script -->
+  <script type="text/babel" src="./js/app.js"></script>
+</body>
+</html>

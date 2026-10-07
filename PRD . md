@@ -1,0 +1,217 @@
+# Scoop & Swirl - Product Requirements Document (PRD)
+**Frontend Web Application + Responsive Chatbot**
+
+- **Project Type**: Frontend-only responsive web application
+- **Brand**: Scoop & Swirl
+- **Currency**: PKR (Rs.)
+
+---
+
+## 1. Project Overview
+- **Scoop & Swirl** is a modern, attractive and fully responsive ice cream shop website. Customers can browse products, view flavors and prices, search and filter products, add items to a shopping cart, manage quantities, and complete a frontend checkout flow.
+- The website includes a responsive AI-style customer chatbot called **ScoopBot** that helps customers discover flavors, prices, offers and product recommendations.
+- The project is frontend-only and uses mock/local data. No real payment gateway, backend, database, authentication, or external AI API is required for the first version.
+
+---
+
+## 2. Goals
+- Create a beautiful professional ice cream shop frontend.
+- Make the website fully responsive on desktop, tablet and mobile.
+- Provide interactive product browsing and a functional frontend shopping cart.
+- Add a responsive customer-support chatbot.
+- Use reusable React components and realistic Pakistani prices in PKR.
+- Use mock data for products, customers, orders and chatbot responses.
+
+---
+
+## 3. Technology & Architecture
+- **Frontend**: React, JavaScript, HTML5, CSS3, responsive design and component-based UI.
+- **Development AI**: Antigravity AI will generate, modify and improve the frontend implementation.
+- **Chatbot**: Rule-based/mock AI chatbot using predefined shop and product data rather than a real AI API.
+- **Architecture**: Component-based frontend architecture with Pages, reusable Components, local Data and frontend State.
+  - **Pages**: Home, Menu, Product Details, Cart, Checkout, About and Contact.
+  - **Components**: Navbar, ProductCard, CategoryFilter, Cart, Chatbot, ChatMessage, Footer and reusable buttons.
+  - **State**: Cart, Favorites and Chatbot Conversation. No backend or database is required.
+
+---
+
+## 4. Brand & Visual Design
+- **Theme**: Cute, premium, colorful and modern ice cream shop.
+- **Suggested palette**: cream/vanilla, soft pink, strawberry pink, chocolate brown, soft purple and white.
+- **UI**: rounded cards, soft shadows, large product images, smooth hover effects, attractive buttons, subtle animations and clean spacing.
+- **Typography**: clean, friendly and readable.
+
+---
+
+## 5. Home Page
+- **Navbar**: logo, Home, Menu, Offers, About, Contact, Cart and chatbot button.
+- **Hero**: “Happiness Served One Scoop at a Time 🍨” with supporting text and Explore Menu / Order Now buttons.
+- **Popular Flavors**: product cards with image, name, flavor, price, rating, Add to Cart and Favorite.
+- **Special Offers**: Happy Hour, Double Scoop Deal and Family Combo.
+- **Why Choose Us**: Fresh Ingredients, Delicious Flavors, Fast Service and Affordable Prices.
+- **Customer Reviews**: fictional names, ratings and review text.
+- **Footer**: logo, navigation, contact details, opening hours and social icons.
+
+---
+
+## 6. Menu Page
+- **Categories**: All, Scoops, Cones, Shakes, Sundaes and Ice Cream Cakes.
+- Search products by name or flavor.
+- Filter by category, price and flavor.
+- Product cards include image, name, flavor, description, price, rating, favorite and Add to Cart.
+
+---
+
+## 7. Product Catalog & Prices
+- **Scoops**:
+  - Vanilla Dream — Rs. 180
+  - Chocolate Fudge — Rs. 220
+  - Strawberry Bliss — Rs. 200
+  - Mango Magic — Rs. 220
+  - Cookies & Cream — Rs. 250
+  - Pistachio Delight — Rs. 280
+- **Cones**:
+  - Classic Cone — Rs. 200
+  - Chocolate Cone — Rs. 250
+  - Double Scoop Cone — Rs. 350
+- **Shakes**:
+  - Chocolate Shake — Rs. 350
+  - Strawberry Shake — Rs. 330
+  - Oreo Shake — Rs. 400
+  - Mango Shake — Rs. 350
+- **Sundaes**:
+  - Chocolate Brownie Sundae — Rs. 450
+  - Strawberry Sundae — Rs. 400
+  - Oreo Crunch Sundae — Rs. 450
+  - Caramel Delight — Rs. 430
+- **Ice Cream Cakes**:
+  - Chocolate Ice Cream Cake — Rs. 1,800
+  - Strawberry Ice Cream Cake — Rs. 1,700
+  - Birthday Special Cake — Rs. 2,200
+
+---
+
+## 8. Product Details
+- Show large product image, product name, flavor, description, price, rating, quantity selector, Add to Cart, Favorite and related products. The page must be responsive.
+
+---
+
+## 9. Shopping Cart
+- Customers can add/remove products, increase/decrease quantity, view subtotal and total, continue shopping and proceed to checkout.
+- Use frontend state. Example: Chocolate Fudge Rs. 220 × 2 + Mango Magic Rs. 220 × 1 = Rs. 660 subtotal. Mock delivery may be Rs. 100, giving Rs. 760 total.
+
+---
+
+## 10. Checkout
+- Frontend-only form with Full Name, Phone Number, Email, Address, City and Payment Method.
+- Mock payment options: Cash on Delivery, Card, Easypaisa and JazzCash.
+- After Place Order, show a success message and generate a mock order number. No real payment processing.
+
+---
+
+## 11. Offers
+- **Happy Hour**: 20% OFF, 4 PM–6 PM.
+- **Double Scoop Deal**: Rs. 320.
+- **Family Combo**: 4 scoops + 2 shakes — Rs. 1,150.
+- **Weekend Special**: Buy 2 sundaes and get 1 topping free.
+
+---
+
+## 12. Responsive Chatbot — ScoopBot
+- Floating chatbot button visible throughout the website.
+- **Desktop**: bottom-right expandable chat panel.
+- **Tablet**: automatically resized chat panel.
+- **Mobile**: large/full-screen responsive chat interface without breaking the website.
+- **Chatbot header**: ScoopBot 🍨 with subtitle “Your sweet assistant”.
+- Include bot avatar, close/minimize controls, chat messages, text input, send button, typing indicator, timestamp, scrollable conversation and reset conversation.
+
+---
+
+## 13. Chatbot Welcome & Quick Actions
+- **Welcome**: “Hi! I'm ScoopBot 🍨 How can I help you today?”
+- **Quick actions**: View Menu, Check Prices, Popular Flavors, Today's Offers and Recommend Something.
+
+---
+
+## 14. Chatbot Functionality
+- Answer common questions using predefined rules/mock data.
+- Examples: list available flavors; identify the cheapest product; recommend chocolate products; find products under Rs. 300; recommend a product; answer mango availability.
+- Recommendations should display product image, name, price, short description and an Add to Cart button.
+
+---
+
+## 15. Chatbot Responsive Requirements
+- Work on desktop, laptop, tablet and mobile.
+- Never overflow outside the screen.
+- Keep messages readable and the input accessible.
+- Support scrolling through long conversations and touch-friendly controls.
+- Test approximately at 1920px, 1440px, 1024px, 768px, 390px and 375px widths.
+
+---
+
+## 16. About & Contact
+- **About**: fictional brand story, mission, values, quality statement and team section.
+- **Contact**: contact form, phone, email, shop address, opening hours, social icons and map placeholder.
+- **Hours**: Monday–Sunday, 11:00 AM–11:00 PM.
+
+---
+
+## 17. Navigation & Interactions
+- All major buttons should work: Menu, Order Now, Add to Cart, Cart, Product Details, Checkout, Chatbot, category filters, search and favorites.
+- Recommended chatbot products must be addable to the cart.
+
+---
+
+## 18. State Management
+- Use frontend state for shopping cart, product quantities, favorites, search, filters, chatbot messages and chatbot open/closed state.
+- Local storage may optionally preserve the cart after refresh.
+
+---
+
+## 19. Responsive Design
+- Desktop: full navigation, multi-column product grids and spacious layouts.
+- Tablet: adjusted grids, spacing and navigation.
+- Mobile: mobile navigation, one/two-column cards, responsive buttons, full-width sections, mobile-friendly chatbot and touch-friendly controls.
+- No horizontal scrolling.
+
+---
+
+## 20. Accessibility & UX
+- Readable text, good contrast, clear buttons, image alt text, keyboard-friendly controls where possible, visible focus states, touch-friendly controls and clear error messages.
+- Include empty-cart and empty-search-result states.
+
+---
+
+## 21. Loading, Empty States & Animations
+- Empty cart: “Your cart is feeling a little empty 🍨” with Explore Menu.
+- No results: “Oops! We couldn't find that flavor.” with View All Flavors.
+- Chatbot loading: animated typing dots and “ScoopBot is typing...”
+- Use subtle product hover, button hover, cart-addition, chatbot opening, message and favorite animations.
+
+---
+
+## 22. Important Development Requirements
+- The application must be frontend-only.
+- Do not add a real database, backend server, authentication, real payment gateway, real order processing or external AI API unless specifically requested later.
+- Use fictional mock data for products, reviews, orders, chatbot conversations and contact information.
+
+---
+
+## 23. Final User Experience
+- Customer flow: Open website → Browse products → Search/filter → View product → Add to cart → Adjust quantity → Checkout → Chat with ScoopBot → Receive recommendations → Add recommended products to cart.
+- The final website should feel like a real professional ice cream shop rather than a basic student project.
+
+---
+
+## 24. Definition of Done
+- Home, Menu, Product Details, Cart, Checkout, Offers, About and Contact are complete.
+- Search, category filters, product cards, quantity controls, checkout and navigation work.
+- Chatbot opens/closes, responds to common questions, recommends products and allows recommended products to be added to cart.
+- Chatbot and entire website work on desktop, tablet and mobile.
+- Mock data is used, UI is polished, and no backend/database is required.
+
+---
+
+## 25. Final Design Direction
+- Build with a premium, playful ice cream aesthetic: Cute + Colorful + Premium + Modern + Responsive + Interactive.
+- The primary focus is a beautiful user experience and a highly responsive ScoopBot integrated naturally into the shopping experience.
